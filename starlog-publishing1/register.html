@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+  <header><a href="index.html">STARLOG</a></header>
+
+
+  <div class="wrap">
+    <div class="centerbox">
+      <div class="leftbox">
+        <img src="images/login.png" alt="">
+      </div>
+
+      <div class="rightbox">
+        <!-- LOGO -->
+         
+        <a href="index.html" class="starlog">STARLOG</a>
+
+       <div class="register-container">
+
+  <!-- [퍼블리싱] 서버가 오류 시 넣어주던 메시지입니다. 스타일 작업 시 주석을 풀어 확인하세요.
+  <div class="error-message">
+    <span>이미 사용 중인 아이디입니다.</span>
+  </div>
+  -->
+
+  <form action="login.html" method="get">
+    <div class="form-group">
+      <label for="username"></label>
+      <input type="text" id="username" name="username"
+             placeholder="아이디 (4자 이상)" required minlength="4">
+    </div>
+
+    <div class="form-group">
+      <label for="password"></label>
+      <input type="password" id="password" name="password"
+             placeholder="비밀번호 (4자 이상)" required minlength="4">
+    </div>
+
+    <div class="form-group">
+      <label for="email"></label>
+      <input type="email" id="email" name="email"
+             placeholder="example@email.com" required>
+    </div>
+
+    
+    <button type="submit">회원가입</button>
+  </form>
+
+  <div class="link-group">
+    <a href="login.html">이미 계정이 있으신가요? 로그인</a>
+  </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
