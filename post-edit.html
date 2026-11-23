@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>글 수정</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/post-edit.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html" class="navbar-brand">STARLOG</a>
+    <div class="navbar-menu">
+        <a href="post-list.html">게시판</a>
+        <a href="mypage.html">user1님</a>
+        <a href="index.html">로그아웃</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="write-box">
+
+
+    <!-- 학습용: 수정과 작성의 차이를 보여주는 정보 박스 -->
+    <div class="info-box">
+      <span>수정 중인 글: #12 | 작성일: <span>2026-11-20 14:32</span></span>
+    </div>
+
+    <!-- [퍼블리싱] 서버가 오류 시 넣어주던 메시지입니다.
+    <div class="error-message">
+      <span>제목과 내용을 입력해주세요.</span>
+    </div>
+    -->
+
+    <form action="post-detail.html" method="get">
+      <div class="form-group">
+        <input type="text" id="title" name="title"
+               value="기말고사 범위 정리해봤어요"
+               placeholder="제목을 입력하세요" required>
+      </div>
+
+      <div class="form-group">
+        <textarea id="content" name="content"
+                  placeholder="내용을 입력하세요" 
+                  required>국어: 3단원 ~ 5단원
+수학: 미적분 전 범위
+영어: 교과서 4~6과 + 부교재
+
+틀린 부분 있으면 댓글로 알려주세요!</textarea>
+      </div>
+
+      <div class="button-group">
+        <button type="submit">수정완료</button>
+        <a href="post-detail.html" class="btn-cancel">취소</a>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
